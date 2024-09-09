@@ -55,7 +55,6 @@ function Product() {
         src="/images/products.png"
         alt=""
       />
-      <div></div>
     </div>
   );
 }
