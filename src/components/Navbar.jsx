@@ -5,7 +5,7 @@ import search from "/images/search.png";
 import { Link } from "react-router-dom";
 function Navbar() {
   return (
-    <div className="container bg-transparent z-40">
+    <div className="container z-40">
       <div className="flex justify-between py-5">
         <img className="image" src={logo} alt="" />
         <div className="flex items-center gap-10  no-underline text-xs">
@@ -13,6 +13,7 @@ function Navbar() {
           <Link to="/product">Products</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/about">About</Link>
+          <Link to="/faqs">FAQs</Link>
           <Link to="/faqs">FAQs</Link>
         </div>
         <div className="flex justify-between gap-3">

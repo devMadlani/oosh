@@ -2,6 +2,7 @@ import React from "react";
 import logo from "/images/ooshh.png";
 import facebook from "/images/facebook.png";
 import instagram from "/images/instagram.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -24,10 +25,10 @@ function Footer() {
           <div className="w-16">
             <span>General</span>
             <div className="text-xs flex flex-col pt-2">
-              <span className="pt-2">About</span>
-              <span className="pt-2">Contact</span>
-              <span className="pt-2">Privacy Policy</span>
-              <span className="pt-2">Terms & Condition</span>
+              <Link to="/about" className="pt-2">About</Link>
+              <Link to="/contact" className="pt-2">Contact</Link>
+              <Link to="/policy" className="pt-2">Privacy Policy</Link>
+              <Link to="/terms" className="pt-2">Terms & Condition</Link>
             </div>  
           </div>
           <div className="w-20 -ml-[100px]">
