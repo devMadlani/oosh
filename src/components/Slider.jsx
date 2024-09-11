@@ -11,8 +11,9 @@ function Slider() {
     "/images/img4.png",
     "/images/img4.png",
     "/images/img4.png",
-
-
+    "/images/img4.png",
+    "/images/img4.png",
+    "/images/img4.png",
   ];
 
   // Initialize slide positions on the first render
@@ -55,10 +56,10 @@ function Slider() {
   const infiniteScrollFactor = slides.length * 2;
   return (
     <div className="mb-32 mt-24 relative">
-      <img className="absolute -top-[3px] left-[12px]" src="/images/beeUp.png" alt="" />
+      <img className="absolute hidden md:inline md:-top-[3px] md:left-[12px]" src="/images/beeUp.png" alt="" />
       <div className="flex flex-col items-center mb-14">
         <h1 className="text-4xl text-center">How we developed Oosh!</h1>
-        <p className="text-xs w-[644px] mt-6 text-center">Our product was developed by an eye doctor with over 20 years of experience treating dry eyes, eye inflammation, and other eye disorders. She was dissatisfied with the products on the market and developed the wash and the brush</p>
+        <p className="text-xs max-w-[644px] px-4 mt-6 text-center">Our product was developed by an eye doctor with over 20 years of experience treating dry eyes, eye inflammation, and other eye disorders. She was dissatisfied with the products on the market and developed the wash and the brush</p>
       </div>
       <div className="flex relative overflow-hidden" >
         {slides.map((slide, index) => (
@@ -70,10 +71,10 @@ function Slider() {
             <img src={slide} alt={`Slide ${index + 1}`} className="absolute w-full h-full p-3 borederd " />
           </div>
         ))}
-        <img src="/images/honey.png" className="absolute -bottom-[202px] right-[207px]" alt="" />
+        {/* <img src="/images/honey.png" className="absolute -bottom-[202px] right-[207px]" alt="" /> */}
       </div>
       <div className="text-center center mt-4 mb-4">
-      <img src="/images/honey.png" className="absolute -bottom-[144px] right-[220px] z-30" alt="" />
+      <img src="/images/honey.png" className="absolute hidden lg:inline lg:-bottom-[144px] lg:right-[220px]" alt="" />
 
         <button className="image w-12 h-11 px-4 py-2 mr-2 border border-[#999090] rounded" onClick={goPrev}>
           <img src="/images/prev.png" alt="" />

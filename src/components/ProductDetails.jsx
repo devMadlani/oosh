@@ -14,14 +14,13 @@ function ProductDetails() {
     setCounter(counter + 1);
   };
   return (
-    <div className="container">
-      <div className="flex justify-between flex-wrap mt-[40px]">
-        <div className=" itemBackground  rounded-lg flex justify-center items-center min-w-[50%] h-[490px]">
-          <img src="/images/products.png" className="w-[55%]" alt="" />
+    <div className="flex flex-wrap">
+      <div className="flex justify-center gap-7 flex-wrap mt-[40px]">
+        <div className=" itemBackground rounded-lg flex justify-center items-center w-[300px] h-[290px] sm:w-[500px] sm:h-[490px] mb-5">
+          <img src="/images/products.png" className="max-w-[100px]" alt="" />
         </div>
-
-        <div className="w-[45%]">
-          <div className="w-[450px]">
+        <div className=" pl-12 max-w-[50%]">
+          <div className="max-w-[450px]">
             <h1 className="text-xs text-[rgba(38,35,29,1)] mb-2">OOSH!</h1>
             <h1 className="text-4xl mb-5">{item[1].title}</h1>
             <h1 className="text-3xl font-bold mb-3">{item[1].price} USD</h1>
@@ -52,7 +51,7 @@ function ProductDetails() {
               +
             </button>
           </div>
-          <div className="w-full mt-11">
+          <div className="max-w-[450px] mt-11">
             <button className="w-full mt-5 flex items-center justify-center  gap-1 btnShadow buynowBtn rounded px-5 py-3 text-[14px] font-medium text-[rgba(38,35,29,1)]">
               Add to Cart
               <img
@@ -85,7 +84,7 @@ function ProductDetails() {
             </div>
             <div>
               <p className="text-xl mt-10 mb-3 font-bold">More Products</p>
-              <div className="w-[264px] border rounded-lg border-[rgba(38,35,29,0.1)] mb-12 ">
+              <div className="max-w-[264px] border rounded-lg border-[rgba(38,35,29,0.1)] mb-12 ">
                 <div className="itemBackground rounded-t-lg flex justify-center items-center min-h-[184px]">
                   <img src={item[2].img} className="w-[40%]" alt="" />
                 </div>

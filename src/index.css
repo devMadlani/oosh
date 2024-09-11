@@ -1,9 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-*{
-  box-sizing: border-box
-}
+
 .container {
   @apply mx-auto w-full max-w-[1200px];
 }
@@ -45,7 +43,7 @@
   
 }
 .card {
-  width: 264px;
+  max-width: 264px;
   height: 244px;
   border: solid 1px rgba(38, 35, 29, 0.1);
 }

@@ -42,14 +42,23 @@ function Terms() {
   return (
     <div>
       <div className="relative footer-background h-[500px]">
-        <div className="flex flex-col justify-center items-center">
-          <div className=" text-4xl mt-32 text-[rgba(255,255,255,1)]">Terms and Conditions</div>
-          <div className="w-[784px] text-center mt-5 text-sm">Welcome to our Terms and Conditions page. Here, we outline the guidelines and rules that govern the use of our website, products, and services. By making a purchase or interacting with our site, you agree to these terms. Please take a moment to review them carefully. Our goal is to ensure transparency and protect both our customers and our business. If you have any questions or concerns, feel free to reach out to our support team.</div>
+        <div className="flex flex-col justify-center items-center px-5">
+          <div className="text-4xl mt-20 text-[rgba(255,255,255,1)] text-center sm:mt-32">Terms and Conditions</div>
+          <div className="max-w-[784px] text-center mt-5 text-sm">Welcome to our Terms and Conditions page. Here, we outline the guidelines and rules that govern the use of our website, products, and services. By making a purchase or interacting with our site, you agree to these terms. Please take a moment to review them carefully. Our goal is to ensure transparency and protect both our customers and our business. If you have any questions or concerns, feel free to reach out to our support team.</div>
         </div>
-        <img className="absolute bottom-0 left-0" src="/images/Maskgroup.png" alt="" />
-        <img className="absolute image bottom-0 right-0" src="/images/Mask group (1).png" alt="" />
+        <img
+          className="absolute hidden bottom-0 left-0 sm:inline w-[245px] md:w-[300px]"
+          src="/images/Maskgroup.png"
+          alt=""
+        />
+        <img
+          className="absolute hidden image bottom-0 right-0 sm:inline w-[150px] md:w-[240px] lg:w-[400px] "
+          src="/images/Mask group (1).png"
+          alt=""
+        />
+        <img src="/images/Mask group (2).png" className="w-[445px] h-[130px] sm:hidden absolute bottom-0 right-0 md:hidden" alt="" />
       </div>
-      <div className="container mt-10 mb-14">
+      <div className="container mt-10 mb-14 p-3">
         <div className="max-w-[744px] m-auto text-[rgba(38,35,29,1)] my-3">
           <div className="font-bold text-base mb-2">Welcome to Oosh!</div>
           <div className="text-sm">These Terms and Conditions ("Terms") govern your use of the Oosh! website, products, and services. By accessing or making a purchase from Oosh!, you agree to abide by these Terms. Please read them carefully to ensure you understand your rights and responsibilities.!</div>

@@ -1,13 +1,13 @@
-import React,{useContext} from "react";
+import React, { useContext } from "react";
 import { ProductContext } from "./ProductProvider";
 import { Link } from "react-router-dom";
 function ProductItem() {
-    const item = useContext(ProductContext)
+  const item = useContext(ProductContext);
   return (
     <div>
       <div className="container">
-        <div className="flex flex-col">
-          <div className="flex justify-between mb-6">
+        <div className="flex flex-col ">
+          <div className="flex justify-between mx-6 mb-6">
             <div className="hidden w-[360px] border border-[rgba(38,35,29,0.1)] p-[10px] text-[14px] sm:block">
               Home &gt; <b>Product</b>
             </div>
@@ -38,46 +38,41 @@ function ProductItem() {
               </select>
             </form>
           </div>
-          
-          <div className="flex flex-wrap justify-between">
+
+          <div className="flex flex-wrap justify-center gap-8">
             {item.map((item, index) => (
-                <Link to="/itemDetails">
+              <Link to="/itemDetails">
+                <div
+                  key={index}
+                  className="w-[264px] border rounded-lg border-[rgba(38,35,29,0.1)] mb-8"
+                >
+                  <div className="itemBackground rounded-t-lg flex justify-center items-center min-h-[184px]">
+                    <img src={item.img} className="w-[40%]" alt="" />
+                  </div>
+                  <div className="flex flex-col m-4">
+                    <h1 className="text-lg text-[rgba(38,35,29,1)] font-medium ">
+                      {item.title}
+                    </h1>
+                    <p className="text-xs text-[rgba(38,35,29,0.8)]  line-clamp-2 my-2">
+                      {item.desc}
+                    </p>
+                    <p className="text-[20px] font-bold">{item.price}</p>
 
-              <div
-                key={index}
-                className="w-[264px] border rounded-lg border-[rgba(38,35,29,0.1)] mb-8"
-              >
-                <div className="itemBackground rounded-t-lg flex justify-center items-center min-h-[184px]">
-                  <img src={item.img} className="w-[40%]" alt="" />
+                    <button className="mt-5 flex items-center justify-center  gap-1 btnShadow buynowBtn rounded px-5 py-3 text-[14px] font-bold text-[rgba(38,35,29,1)]">
+                      Add to Cart
+                      <img
+                        className="image h-3 w-3 ml-[4px]"
+                        src="/images/cart.png"
+                        alt=""
+                      />
+                    </button>
+                  </div>
                 </div>
-                <div className="flex flex-col m-4">
-                  <h1 className="text-lg text-[rgba(38,35,29,1)] font-medium ">
-                    {item.title}
-                  </h1>
-                  <p className="text-xs text-[rgba(38,35,29,0.8)]  line-clamp-2 my-2">
-                    {item.desc}
-                  </p>
-                  <p className="text-[20px] font-bold">{item.price}</p>
-
-                  <button className="mt-5 flex items-center justify-center  gap-1 btnShadow buynowBtn rounded px-5 py-3 text-[14px] font-bold text-[rgba(38,35,29,1)]">
-                    Add to Cart
-                    <img
-                      className="image h-3 w-3 ml-[4px]"
-                      src="/images/cart.png"
-                      alt=""
-                    />
-                  </button>
-                </div>
-              </div>
               </Link>
-
             ))}
           </div>
-          
-
         </div>
       </div>
-     
     </div>
   );
 }

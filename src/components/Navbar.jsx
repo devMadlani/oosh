@@ -5,20 +5,21 @@ import search from "/images/search.png";
 import { Link } from "react-router-dom";
 function Navbar() {
   return (
-    <div className="container z-40">
+    <div className="px-4 mx-auto container max-w-[1200px] ">
       <div className="flex justify-between py-5">
         <img className="image" src={logo} alt="" />
-        <div className="flex items-center gap-10  no-underline text-xs">
-          <Link  to="/">Home</Link>
+        <div className="items-center gap-10  no-underline text-xs hidden md:flex">
+          <Link to="/">Home</Link>
           <Link to="/product">Products</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/about">About</Link>
           <Link to="/faqs">FAQs</Link>
           <Link to="/faqs">FAQs</Link>
         </div>
-        <div className="flex justify-between gap-3">
-          <img className="w-30" src={search} alt="" />
-          <img className="w-30" src={icon} alt="" />
+        <div className="flex">
+          <img className="object-none mr-[10px]" src={search} alt="" />
+          <img className="object-none w-[22px] ml-[9px]" src={icon} alt="" />
+          <img src="/images/menu.png" className="object-none ml-4 md:hidden" alt="" />
         </div>
       </div>
     </div>
