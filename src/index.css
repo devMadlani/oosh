@@ -58,3 +58,13 @@
 .itemBackground{
   background: radial-gradient(rgba(204, 197, 184, 1),rgba(153, 148, 138, 1))
 }
+.progress{
+
+  background: linear-gradient(261.9deg, #ffbf40 0%, #ffaa00 100%);
+}
+.doneBackground{
+  background: linear-gradient(261.9deg, rgba(172,229,57,1),rgba(112, 204, 20, 1));
+}
+.doneShdow{
+  box-shadow: 0px 32px 64px -16px rgba(112, 204, 20, 0.8);
+}

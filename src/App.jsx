@@ -7,6 +7,9 @@ import { ProductProvider } from "./components/ProductProvider";
 import ProductDetails from "./components/ProductDetails";
 import Terms from "./components/terms";
 import Policy from "./components/Policy";
+import AddCart from "./components/AddCart";
+import Checkout from "./components/Checkout";
+import Done from "./components/Done";
 ProductProvider
 export default function App() {
   return (
@@ -21,6 +24,9 @@ export default function App() {
         <Route path="/itemDetails" element={<ProductDetails/>}/>
         <Route path="/terms" element={<Terms/>}/>
         <Route path="/policy" element={<Policy/>}/>
+        <Route path="/cart" element={<AddCart/>}/>
+        <Route path="/checkout" element={<Checkout/>}/>
+        <Route path="/done" element={<Done/>}/>
         </Routes>
       <Footer />
       </div>

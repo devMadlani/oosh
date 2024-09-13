@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "/images/Oosh!.png";
-import icon from "/images/Icon.png";
+import icon from "/images/addCart.png";
 import search from "/images/search.png";
 import { Link } from "react-router-dom";
 function Navbar() {
@@ -14,12 +14,17 @@ function Navbar() {
           <Link to="/contact">Contact</Link>
           <Link to="/about">About</Link>
           <Link to="/faqs">FAQs</Link>
-          <Link to="/faqs">FAQs</Link>
         </div>
         <div className="flex">
           <img className="object-none mr-[10px]" src={search} alt="" />
-          <img className="object-none w-[22px] ml-[9px]" src={icon} alt="" />
-          <img src="/images/menu.png" className="object-none ml-4 md:hidden" alt="" />
+          <Link to="/cart">
+            <img className="object-none w-[22px] ml-[9px]" src={icon} alt="" />
+          </Link>
+          <img
+            src="/images/menu.png"
+            className="object-none ml-4 md:hidden"
+            alt=""
+          />
         </div>
       </div>
     </div>
