@@ -68,3 +68,6 @@
 .doneShdow{
   box-shadow: 0px 32px 64px -16px rgba(112, 204, 20, 0.8);
 }
+.about-background{
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFBF2 100%);
+}

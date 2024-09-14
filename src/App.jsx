@@ -10,6 +10,7 @@ import Policy from "./components/Policy";
 import AddCart from "./components/AddCart";
 import Checkout from "./components/Checkout";
 import Done from "./components/Done";
+import About from "./components/About";
 ProductProvider
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
         <Route path="/cart" element={<AddCart/>}/>
         <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/done" element={<Done/>}/>
+        <Route path="/about" element={<About/>}/>
         </Routes>
       <Footer />
       </div>
