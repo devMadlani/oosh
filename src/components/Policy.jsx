@@ -97,10 +97,10 @@ function Policy() {
     <div>
       <div className="relative footer-background h-[500px]">
         <div className="flex flex-col justify-center items-center px-5">
-          <div className="text-4xl mt-20 text-[rgba(255,255,255,1)] sm:mt-32">
+          <div className="text-[32px] text-center lg:text-[40px] mt-20 text-[rgba(255,255,255,1)] sm:mt-32">
             Privacy Policy
           </div>
-          <div className="max-w-[744px] text-center mt-5 text-sm">
+          <div className="max-w-[744px] text-[12px]  text-center mt-5 lg:text-sm">
             At Oosh!, your privacy is our priority. We believe in transparency
             and want you to feel confident about how we handle your personal
             information. Our Privacy Policy explains the types of data we

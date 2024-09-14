@@ -43,8 +43,8 @@ function Terms() {
     <div>
       <div className="relative footer-background h-[500px]">
         <div className="flex flex-col justify-center items-center px-5">
-          <div className="text-4xl mt-20 text-[rgba(255,255,255,1)] text-center sm:mt-32">Terms and Conditions</div>
-          <div className="max-w-[784px] text-center mt-5 text-sm">Welcome to our Terms and Conditions page. Here, we outline the guidelines and rules that govern the use of our website, products, and services. By making a purchase or interacting with our site, you agree to these terms. Please take a moment to review them carefully. Our goal is to ensure transparency and protect both our customers and our business. If you have any questions or concerns, feel free to reach out to our support team.</div>
+          <div className="text-[32px] mt-20 lg:text-[40px] text-[rgba(255,255,255,1)] text-center sm:mt-32">Terms and Conditions</div>
+          <div className="max-w-[744px] text-[12px]  text-center mt-5 lg:text-sm">Welcome to our Terms and Conditions page. Here, we outline the guidelines and rules that govern the use of our website, products, and services. By making a purchase or interacting with our site, you agree to these terms. Please take a moment to review them carefully. Our goal is to ensure transparency and protect both our customers and our business. If you have any questions or concerns, feel free to reach out to our support team.</div>
         </div>
         <img
           className="absolute hidden bottom-0 left-0 sm:inline w-[245px] md:w-[300px]"

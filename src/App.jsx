@@ -11,6 +11,8 @@ import AddCart from "./components/AddCart";
 import Checkout from "./components/Checkout";
 import Done from "./components/Done";
 import About from "./components/About";
+import Faqs from "./components/Faqs";
+import Contact from "./components/contact";
 ProductProvider
 export default function App() {
   return (
@@ -29,6 +31,8 @@ export default function App() {
         <Route path="/checkout" element={<Checkout/>}/>
         <Route path="/done" element={<Done/>}/>
         <Route path="/about" element={<About/>}/>
+        <Route path="/faqs" element={<Faqs/>}/>
+        <Route path="/contact" element={<Contact/>}/>
         </Routes>
       <Footer />
       </div>
