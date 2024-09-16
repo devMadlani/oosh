@@ -41,15 +41,15 @@ function ProductItem() {
 
           <div className="flex flex-wrap justify-center gap-8">
             {item.map((item, index) => (
-              <Link to="/itemDetails">
-                <div
-                  key={index}
-                  className="w-[264px] border rounded-lg border-[rgba(38,35,29,0.1)] mb-8"
-                >
-                  <div className="itemBackground rounded-t-lg flex justify-center items-center min-h-[184px]">
-                    <img src={item.img} className="w-[40%]" alt="" />
-                  </div>
-                  <div className="flex flex-col m-4">
+              <div
+                key={index}
+                className="w-[264px] border rounded-lg border-[rgba(38,35,29,0.1)] mb-8"
+              >
+                <div className="itemBackground rounded-t-lg flex justify-center items-center min-h-[184px]">
+                  <img src={item.img} className="w-[40%]" alt="" />
+                </div>
+                <div className="flex flex-col m-4">
+                  <Link to="/itemDetails">
                     <h1 className="text-lg text-[rgba(38,35,29,1)] font-medium ">
                       {item.title}
                     </h1>
@@ -57,7 +57,8 @@ function ProductItem() {
                       {item.desc}
                     </p>
                     <p className="text-[20px] font-bold">{item.price}</p>
-
+                  </Link>
+                  <Link to="/cart">
                     <button className="mt-5 flex items-center justify-center  gap-1 btnShadow buynowBtn rounded px-5 py-3 text-[14px] font-bold text-[rgba(38,35,29,1)]">
                       Add to Cart
                       <img
@@ -66,9 +67,9 @@ function ProductItem() {
                         alt=""
                       />
                     </button>
-                  </div>
+                  </Link>
                 </div>
-              </Link>
+              </div>
             ))}
           </div>
         </div>

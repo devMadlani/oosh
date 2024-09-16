@@ -6,19 +6,19 @@ function Main() {
     <div>
       <div className="relative">
         <div className="container mb-10 flex flex-wrap justify-between mt-8 relative">
-          <div className="w-[555px] mt-4 mb-[130px] ml-4">
+          <div className="max-w-[455px] mt-4 mb-[130px] ml-4">
             <h1 className="text-xs leading-normal pb-5">
               EYELID & LASH CLEANSER
             </h1>
             <h1 className="text-5xl pb-5 leading-normal">
-              Get <span className="text-gradient-custom text-5xl">clean</span>{" "}
+              Get <span className="text-gradient-custom text-5xl">clean{" "}</span>
               and <br />
               <span className="text-gradient-custom text-5xl ">
-                comfortable
-              </span>{" "}
-              eyes.
+                comfortable 
+              </span>
+              {" "}eyes.
             </h1>
-            <p className="text-xs text-[rgba(38,35,29,0.8)]">
+            <p className="text-xs text-[rgba(38,35,29,0.8)] max-w-[455=x]">
               Our specially formulated cleanser removes dirt, makeup, and
               impurities, leaving your eyes feeling refreshed and revitalized.
               Designed for daily use, it gently purifies your eyelids and
@@ -26,7 +26,7 @@ function Main() {
               feel their best.
             </p>
             <button className="mt-7 btnShadow flex buynowBtn rounded px-5 py-3 text-[10px] text-[rgba(38,35,29,1)]">
-              Buy Now{" "}
+              Buy Now
               <img
                 className="image h-3 w-3 ml-[4px]"
                 src="/images/Icon.png"
@@ -70,9 +70,9 @@ function Main() {
             Daily Routine for Clear, Healthy Eyes
           </div>
           <div className="text-4xl mt-4">
-            Maintain eye{" "}
+            Maintain eye
             <span className="text-gradient-custom text-4xl">health</span> with
-            regular eyelid{" "}
+            regular eyelid
             <span className="text-gradient-custom text-4xl">hygiene</span>
           </div>
           <div className="mt-10 text-[rgba(38,35,29,0.8)] text-[14px] px-4">
@@ -148,7 +148,7 @@ function Main() {
       </div>
       <div className="flex flex-wrap mt-20 w-full mb-[100px] relative">
         <div
-          className="w-[375px] h-[300px] flex  justify-center items-center  lg:w-[50%] lg:h-[500px]"
+          className="w-[100%] min-h-[300px]  flex justify-center items-center md:w-[45%] lg:w-[50%] lg:h-[500px]"
           style={{
             background:
               "radial-gradient(71.32% 68.99% at 47.18% 48.91%, #415580 0%, #202A40 100%)",
@@ -156,13 +156,13 @@ function Main() {
         >
           <img src="/images/IMG_3516 1.png" className="w-[50%]" alt="" />
         </div>
-        <div className="relative w-[375px] lg:w-[50%] p-4">
+        <div className="relative w-[100%] md:w-[50%] lg:w-[50%] p-4">
           <div className=" mx-auto lg:ml-20 mt-10 lg:w-[462px]">
             <h1 className="text-[10px] text-[rgba(0,0,0,1)]  mb-4 lg:text-sm">
               OOSH!
             </h1>
             <p className="text-[32px] lg:text-[40px] mb-5">
-              The Broosh™ - Whisper Touch Eyelid Brush{" "}
+              The Broosh™ - Whisper Touch Eyelid Brush
             </p>
             <p className="text-xs text-[rgba(38,35,29,0.8)] mb-14 lg:text-[14px]">
               For use with all eyelids and lashes. Envisioned and designed by an
@@ -172,7 +172,7 @@ function Main() {
               eyelid/eyelash area.
             </p>
             <button className="mt-7 btnShadow flex buynowBtn rounded px-5 py-3 text-[10px] text-[rgba(38,35,29,1)]">
-              Buy Now{" "}
+              Buy Now
               <img
                 className="image h-3 w-3 ml-[4px]"
                 src="/images/Icon.png"
@@ -195,14 +195,14 @@ function Main() {
           Expert Tips for Optimal Eyelid Hygiene
         </h1>
         <h1 className="text-[32px] text-center mb-6 lg:text-[40px]">
-          Would you like to{" "}
+          Would you like to
           <span className="text-gradient-custom text-[32px] lg:text-[40px]">
             know more
-          </span>{" "}
+          </span>
           about how to <br />
           <span className="text-gradient-custom text-[32px] lg:text-[40px]">
             clean
-          </span>{" "}
+          </span>
           your eyelids?
         </h1>
         <div className="max-w-[744px] mb-10">
@@ -217,7 +217,7 @@ function Main() {
 
         <div className="justify-center mb-10">
           <button className="mt-7 btnShadow flex buynowBtn rounded px-5 py-3 text-[12px] text-[rgba(38,35,29,1)]">
-            Learn more{" "}
+            Learn more
             <img
               className="image ml-[5px] mt-[5px]"
               src="/images/arrow.png"
